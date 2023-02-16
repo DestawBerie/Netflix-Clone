@@ -28,6 +28,8 @@
   margin-left: 20px;
   color: white;
 }
-/* .vid {
-  text-align: center;
-} */
+.center {
+  width: 50%;
+  margin: 0 auto;
+  /* padding: 40px; */
+}

@@ -54,8 +54,7 @@ function Row({ title, tool, fetchUrl, isLargeRow }) {
           <img
             onClick={() => handleClick(movie)}
             className={`row_poster ${isLargeRow && "row_posterLarge"}`}
-            // src={`${base_url}${movie.poster_path}`}
-            // alt={movie.name} this one is post all titles/posters on images
+
             src={`${base_url}${
               isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}
@@ -63,9 +62,7 @@ function Row({ title, tool, fetchUrl, isLargeRow }) {
           />
         ))}
       </div>
-
-      {/* to make a part taht used to play the trailer below the video clicked */}
-      <div style={{ padding: "40px" }}>
+      <div className="center" style={{padding : "40px" }}>
         {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
       </div>
     </div>
